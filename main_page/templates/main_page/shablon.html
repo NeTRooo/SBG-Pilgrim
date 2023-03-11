@@ -1,0 +1,58 @@
+{% load static %}
+{% load socialaccount %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- developer: https://t.me/DOfTheS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-RU-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'main_page/img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'main_page/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'main_page/css/shablon.css' %}">
+    {% block styles %}
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'main_page/css/transform.css' %}">
+</head>
+<body>
+    <!-- developer: https://t.me/DOfTheS -->
+    <div class="nav">
+        <a href="/"><img src="{% static 'main_page/img/nav_logo.png' %}"></a>
+        <a href="/profile"><img src="{% static 'main_page/img/user_img.png' %}" id="user-img"></a>
+    </div>
+    <div class="nav_left">
+        <div class="left_items">
+            {% url 'profile_page' as url_profile %}
+            <div class="left_items_item {% if url_profile == request.path %}_active{% endif %}">
+                <a href="/profile" class="left_items_item">{% if url_profile == request.path %}<img src="{% static 'main_page/img/svg/active_profile.svg' %}">{% else %}<img src="{% static 'main_page/img/svg/profile.svg' %}">{% endif %}<h5>Профиль</h5></a>
+            </div>
+            {% url 'check_page' as url_check %}
+            <div class="left_items_item {% if url_check == request.path %}_active{% endif %}">
+                <a href="/check" class="left_items_item">{% if url_check == request.path %}<img src="{% static 'main_page/img/svg/active_check.svg' %}">{% else %}<img src="{% static 'main_page/img/svg/check.svg' %}">{% endif %}<h5>Проверка</h5></a>
+            </div>
+            {% url 'applications_page' as url_applications %}
+            <div class="left_items_item {% if url_applications == request.path %}_active{% endif %}">
+                <a href="/applications" class="left_items_item">{% if url_applications == request.path %}<img src="{% static 'main_page/img/svg/active_star.svg' %}">{% else %}<img src="{% static 'main_page/img/svg/star.svg' %}">{% endif %}<h5>Мои заявки</h5></a>
+            </div>
+            {% url 'help_page' as url_help %}
+            <div class="left_items_item {% if url_help == request.path %}_active{% endif %}">
+                <a href="/help" class="left_items_item">{% if url_help == request.path %}<img src="{% static 'main_page/img/svg/active_help.svg' %}">{% else %}<img src="{% static 'main_page/img/svg/help.svg' %}">{% endif %}<h5>Помощь</h5></a>
+            </div>
+            {% url 'settings_page' as url_settings %}
+            <div class="left_items_item {% if url_settings == request.path %}_active{% endif %}">
+                <a href="/settings" class="left_items_item">{% if url_settings == request.path %}<img src="{% static 'main_page/img/svg/active_settings.svg' %}">{% else %}<img src="{% static 'main_page/img/svg/settings.svg' %}">{% endif %}<h5>Настройки</h5></a>
+            </div>
+            <div class="left_items_item">
+                <a href="/logout" class="left_items_item"><img src="{% static 'main_page/img/svg/exit.svg' %}"><h5>Выйти</h5></a>
+            </div>
+        </div>
+    </div>
+    <div class="page_content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <!-- developer: https://t.me/DOfTheS -->
+</body>
+</html>

@@ -1,0 +1,6 @@
+body{background-color:var(--BG_4);}
+.nav{display:flex;align-items:center;justify-content:space-between;max-height:71px;background-color:var(--BG_0);}.nav a img{padding:4px 18px;}
+.nav_left{width:224px;background-color:var(--BG_3);color:var(--BG_0);height:calc(100% - 71px);height:-moz-calc(100% - 71px);height:-webkit-calc(100% - 71px);height:-o-calc(100% - 71px);}
+.left_items{padding:18px;}.left_items_item{display:flex;margin-bottom:16px;}a.left_items_item{margin-bottom:0px;}.left_items_item h5{margin-left:8px;cursor:pointer;}
+._active{color:var(--TC_2)}#user-img{height:64px;border-radius:100%;}
+.page_content{position:absolute;top:calc(100% - 71px);top:71px;left:224px;height:calc(100% - 71px);height:-moz-calc(100% - 71px);height:-webkit-calc(100% - 71px);height:-o-calc(100% - 71px);width:calc(100% - 224px);width:-moz-calc(100% - 224px);width:-webkit-calc(100% - 224px);width:-o-calc(100% - 224px);}

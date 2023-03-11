@@ -1,0 +1,10 @@
+.user_profile{min-height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;}
+
+.profile_stats-user img{height:128px;border-radius:100%;}
+.profile_stats-points{width:600px;margin-top:32px;}
+.stats-points_checked{display:flex;flex-direction:row;justify-content:space-between;align-items:center}
+
+.points_new_item,.points_update_item{display:flex;flex-direction:row;justify-content:space-between;align-items:center;margin-top:8px;}
+.stats-points_new,.stats-points_update{margin-top:16px;}
+
+

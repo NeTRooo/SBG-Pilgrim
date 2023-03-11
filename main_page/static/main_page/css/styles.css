@@ -1,0 +1,35 @@
+/* import-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {font-family:'Script MT Bold';src:url('/static/main_page/fonts/scriptmtbold.ttf');}
+/* reset-standart-css */
+*{padding:0;margin:0;border:0;}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}:focus,:active{outline:none;}a:focus,a:active{outline:none;}nav,footer,header,aside{display:block;}html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}input,button,textarea{font-family:inherit;}input::-ms-clear{display:none;}button{cursor:pointer;}button::-moz-focus-inner{padding:0;border:0;}a,a:visited{text-decoration:none;}a:hover{text-decoration:none;}ul li{list-style:none;}img{vertical-align:top;}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}a{border:0;text-decoration:none;color:unset;}
+/* Fonts */
+*{font-family:'Roboto',sans-serif;}p{cursor:default;}
+.ui_18_r{font-size:18px;line-height:25px;font-weight:normal;}.ui_18_m{font-weight:500;font-size:18px;line-height:25px}.ui_18_sb{font-weight:600;font-size:18px;line-height:24px}.ui_18_b{font-weight:700;font-size:18px;line-height:24px}.ui_18_eb{font-weight:800;font-size:18px;line-height:24px}.ui_18_bl{font-weight:900;font-size:18px;line-height:24px}
+.ui_16_r{font-size:16px;line-height:24px;font-weight:normal;}.ui_16_m{font-weight:500;font-size:16px;line-height:24px}.ui_16_sb{font-weight:600;font-size:16px;line-height:24px}.ui_16_b{font-weight:700;font-size:16px;line-height:24px}.ui_16_eb{font-weight:800;font-size:16px;line-height:24px}.ui_16_bl{font-weight:900;font-size:16px;line-height:24px}
+.ui_14_r{font-size:14px;line-height:22px;font-weight:normal;}.ui_14_m{font-weight:500;font-size:14px;line-height:22px}.ui_14_sb{font-weight:600;font-size:14px;line-height:22px}.ui_14_b{font-weight:700;font-size:14px;line-height:22px}.ui_14_eb{font-weight:800;font-size:14px;line-height:22px}.ui_14_bl{font-weight:900;font-size:14px;line-height:22px}
+.ui_13_r{font-size:13px;line-height:20px;font-weight:normal;}.ui_13_m{font-weight:500;font-size:13px;line-height:20px}.ui_13_sb{font-weight:600;font-size:13px;line-height:20px}.ui_13_b{font-weight:700;font-size:13px;line-height:20px}.ui_13_eb{font-weight:800;font-size:13px;line-height:20px}.ui_13_bl{font-weight:900;font-size:13px;line-height:20px}
+h1,.h1{font-size:40px;line-height:45px;font-weight:700;cursor:default;}h2,.h2{font-size:36px;line-height:42px;font-weight:900;cursor:default;}
+h3,.h3{font-size:32px;line-height:39px;font-weight:700;cursor:default;}h4,.h4{font-size:28px;line-height:39px;font-weight:700;cursor:default;}
+h5,.h5{font-size:24px;line-height:30px;font-weight:500;cursor:default;}h6,.h6{font-size:18px;line-height:25px;font-weight:700;cursor:default;}
+.h4_r{font-size:28px;line-height:33px;font-weight:400;cursor:default;}.h4_m{font-size:28px;line-height:33px;font-weight:500;cursor:default;}
+.h6_20{font-size:20px;line-height:23px;font-weight:700;cursor:default;}
+.ui_left{text-align:left;}.ui_center{text-align:center}.ui_right{text-align:right;}button{cursor:pointer;}
+.MT_24_r{font-family:'Script MT Bold';font-style:normal;font-weight:700;font-size:24px;line-height:29px;}
+.MT_28_r{font-family:'Script MT Bold';font-style:normal;font-weight:700;font-size:28px;line-height:34px;}
+.MT_60_r{font-family:'Script MT Bold';font-style:normal;font-weight:700;font-size:60px;line-height:72px;}
+.MT_64_r{font-family:'Script MT Bold';font-style:normal;font-weight:700;font-size:64px;line-height:77px;}
+/* Colors */
+:root{
+    --BG_0:#fff;
+    --BG_1:#000;
+    --BG_2:rgb(29, 111, 194);
+    --BG_3:#3E3E3E;
+    --BG_4:#ECECEC;
+    --TC_0:#FFF;
+    --TC_1:#000;
+    --TC_2:#4BDC28;
+}
+.red{color:red}.green{color:#5BCF82}
+/* Buttons */
+.button{align-self:center;padding:10px 15px;border-radius:5px;background-color:var(--BG_7);color:var(--TC_0);border:1px solid var(--BG_7);}

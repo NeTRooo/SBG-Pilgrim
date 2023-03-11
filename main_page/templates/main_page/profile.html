@@ -1,0 +1,48 @@
+{% extends 'main_page/shablon.html' %}
+{% load static %}
+
+{% block title %}Профиль | Pilgrim SBG{% endblock  %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'main_page/css/profile.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="user_profile">
+        <div class="profile_stats-user">
+            <img src="{% static 'main_page/img/user_img.png' %}">
+        </div>
+        <div class="profile_stats-points h4_r">
+            <div class="stats-points_checked">
+                <p>Поинтов просмотрено</p>
+                <p>66666666</p>
+            </div>
+            <div class="stats-points_new">
+                <p class="h4_m">Статистика новых поинтов</p>
+                <div class="points_new_item">
+                    <p>Порталов одобрено</p>
+                    <p>66666666</p>
+                </div>
+                <div class="points_new_item">
+                    <p>Порталов отклонено</p>
+                    <p>66666666</p>
+                </div>
+                <div class="points_new_item">
+                    <p>Найдено дублей</p>
+                    <p>66666666</p>
+                </div>
+            </div>
+            <div class="stats-points_update">
+                <p class="h4_m">Статистика обновлений данных</p>
+                <div class="points_update_item">
+                    <p>Обновлений одобрено</p>
+                    <p>66666666</p>
+                </div>
+                <div class="points_update_item">
+                    <p>Обновлений отклонено</p>
+                    <p>66666666</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
