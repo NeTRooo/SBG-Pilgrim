@@ -10,3 +10,4 @@ sbg_pilgrim/__pycache__/settings.cpython-39.pyc
 sbg_pilgrim/__pycache__/urls.cpython-39.pyc
 sbg_pilgrim/__pycache__/wsgi.cpython-39.pyc
 db.sqlite3
+sbgpilgrim_bot/credentials.py
