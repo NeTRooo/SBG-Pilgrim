@@ -1,0 +1,45 @@
+{% extends 'main_page/shablon.html' %}
+{% load static %}
+
+{% block title %}Профиль | Pilgrim SBG{% endblock  %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'main_page/css/profile.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="check_point">
+        <div class="line_1">
+            <div class="card_1">
+                <p class="ui_18_m">Насколько данное фото подходит под критерии создания поинта?</p>
+            </div>
+            <div class="card_2">
+                <p class="ui_18_m">Насколько название и описание подходят поинту? Описание не обязательно.</p>
+            </div>
+            <div class="card_3">
+                <p class="ui_18_m">Дополнительная информация.</p>
+            </div>
+        </div>
+        <div class="line_2">
+            <div class="card_4">
+                <p class="ui_18_m">Проверка на дубликаты</p>
+            </div>
+            <div class="card_5">
+                <div class="subcart_1">
+                    <p class="ui_18_m">Безопасный доступ к поинту</p>
+                </div>
+                <div class="subcart_2">
+                    <p class="ui_18_m">Уникальность поинта</p>
+                </div>
+                <div class="subcart_3">
+                    <p class="ui_18_m">Историческое значение поинта</p>
+                </div>
+            </div>
+        </div>
+        <div class="line_3">
+            <div class="card_6">
+                <p class="ui_18_m">Ваши коментарии к поинту</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

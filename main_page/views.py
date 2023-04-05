@@ -4,6 +4,7 @@ from django.contrib.auth import logout
 import json
 import requests
 from allauth.socialaccount.models import SocialAccount
+from .models import UsersStats, UsersLvl
 
 
 def login_page(request):
@@ -20,7 +21,10 @@ def main_page(request):
 
 def profile_page(request):
     if request.user.is_authenticated:
-        return render(request, 'main_page/profile.html')
+        print(request.user.username)
+        userstats_db = UsersStats.objects.get(user_nick='densss')
+        print(userstats_db)
+        return render(request, 'main_page/profile.html', {"userstats":userstats_db})
     else:
         return redirect('login_page')
 

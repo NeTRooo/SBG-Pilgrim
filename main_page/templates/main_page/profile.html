@@ -15,32 +15,32 @@
         <div class="profile_stats-points h4_r">
             <div class="stats-points_checked">
                 <p>Поинтов просмотрено</p>
-                <p>66666666</p>
+                <p>{{ userstats.total_check }}</p>
             </div>
             <div class="stats-points_new">
                 <p class="h4_m">Статистика новых поинтов</p>
                 <div class="points_new_item">
                     <p>Порталов одобрено</p>
-                    <p>66666666</p>
+                    <p>{{ userstats.new_accept }}</p>
                 </div>
                 <div class="points_new_item">
                     <p>Порталов отклонено</p>
-                    <p>66666666</p>
+                    <p>{{ userstats.new_deny }}</p>
                 </div>
                 <div class="points_new_item">
                     <p>Найдено дублей</p>
-                    <p>66666666</p>
+                    <p>{{ userstats.new_dubls }}</p>
                 </div>
             </div>
             <div class="stats-points_update">
                 <p class="h4_m">Статистика обновлений данных</p>
                 <div class="points_update_item">
                     <p>Обновлений одобрено</p>
-                    <p>66666666</p>
+                    <p>{{ userstats.update_accept }}</p>
                 </div>
                 <div class="points_update_item">
                     <p>Обновлений отклонено</p>
-                    <p>66666666</p>
+                    <p>{{ userstats.update_deny }}</p>
                 </div>
             </div>
         </div>
