@@ -3,12 +3,10 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
-from sbgpilgrim_bot import urls as sbgpilgrim_bot_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('tg/', include('tgauth.urls')),
-    path('sbgpilgrim_bot/', include(sbgpilgrim_bot_urls)),
     path('accounts/', include('allauth.urls')),
     path('', include('main_page.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -26,7 +26,12 @@
         <h5>Добро пожаловать в SBG <span class="MT_28_r">Pilgrim!</span></h5>
         <h5>Присоединившись, вы поможете создать приключения для себя и других, составив карту интересных мест по всему миру.</h5>
       </div>
-      <div class="login_form"></div>
+      <form action="#" method="post">
+        {% csrf_token %}
+        <div class="login_form">
+          <button type="submit" class="h5"><img src="{% static 'main_page/img/tg_logo.png' %}">Войти через Telegram</button>
+        </div>
+      </form>
       <div class="correction_text ui_center h6_20">
         <h6 class="h6_20">Ваши данные не сохраняются.</h6>
         <h6 class="h6_20">Логин и пароль используются только для получения статистики вашего аккаунта.</h6>

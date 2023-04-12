@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import UsersStats, UsersLvl
+from .models import UsersStats, UsersLvl, LinkPassword, LinkData
 
 #  
 #  configuring the display
@@ -17,9 +17,23 @@ class UsersLvlAdmin(admin.ModelAdmin):
     list_display_links = ('user_nick', 'lvl', 'exp',)
     search_fields = ('user_nick', 'lvl', 'exp')
 
+# encrypted, password, tgdata
+class LinkPasswordAdmin(admin.ModelAdmin):
+    list_display = ('encrypted', 'password', 'tgdata')
+    list_display_links = ('encrypted', 'password', 'tgdata')
+    search_fields = ('encrypted', 'password', 'tgdata')
+
+# user, tgdata
+class LinkDataAdmin(admin.ModelAdmin):
+    list_display = ('tgdata',)
+    list_display_links = ('tgdata',)
+    search_fields = ('tgdata',)
+
 #  
 #  Register model
 #  
 
 admin.site.register(UsersStats, UsersStatsAdmin)
 admin.site.register(UsersLvl, UsersLvlAdmin)
+admin.site.register(LinkPassword, LinkPasswordAdmin)
+admin.site.register(LinkData, LinkDataAdmin)

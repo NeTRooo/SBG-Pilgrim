@@ -1,3 +1,4 @@
+main_page/views.py
 sbg_pilgrim/settings.py
 main_page/__pycache__/__init__.cpython-39.pyc
 main_page/__pycache__/admin.cpython-39.pyc
@@ -11,3 +12,6 @@ sbg_pilgrim/__pycache__/urls.cpython-39.pyc
 sbg_pilgrim/__pycache__/wsgi.cpython-39.pyc
 db.sqlite3
 sbgpilgrim_bot/credentials.py
+0tg/db1.sqlite3
+0tg/main.py
+main_page\views.py
