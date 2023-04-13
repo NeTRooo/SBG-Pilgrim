@@ -4,35 +4,112 @@
 {% block title %}Профиль | Pilgrim SBG{% endblock  %}
 
 {% block styles %}
-    <link rel="stylesheet" href="{% static 'main_page/css/profile.css' %}">
+    <link rel="stylesheet" href="{% static 'main_page/css/check.css' %}">
 {% endblock %}
 
 {% block content %}
     <div class="check_point">
+        <div class="table-of-content">
+            <p class="h5">Рассмотрение</p>
+            <p class="ui_18_m">Дайте объективную оценку поинту, что бы помочь нам добавить портал</p>
+        </div>
         <div class="line_1">
-            <div class="card_1">
+            <div class="card_1 card_line_1">
                 <p class="ui_18_m">Насколько данное фото подходит под критерии создания поинта?</p>
+                <div class="card_1_info">
+                    <img src="{% static 'main_page/img/check1.png' %}">
+                    <p class="ui_18_m">Адрес: микрорайон № 22, Промышленный район, Ставрополь</p>
+                </div>
+                <div class="card_score">
+                    <p class="ui_18_m">Оценка:</p>
+                    <select name="1_score" id="1_score-select">
+                        <option value="">--Выберите оценку--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
             </div>
-            <div class="card_2">
+            <div class="card_2 card_line_1">
                 <p class="ui_18_m">Насколько название и описание подходят поинту? Описание не обязательно.</p>
+                <div class="card_2_info">
+                    <p class="h3">Стелла “Я люблю СКФУ”</p>
+                    <p class="h5">Стелла установлена напротив корпуса №10 СКФУ</p>
+                </div>
+                <div class="card_score">
+                    <p class="ui_18_m">Оценка:</p>
+                    <select name="2_score" id="2_score-select">
+                        <option value="">--Выберите оценку--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
             </div>
-            <div class="card_3">
+            <div class="card_3 card_line_1">
                 <p class="ui_18_m">Дополнительная информация.</p>
+                <div class="card_3_info">
+                    <img src="{% static 'main_page/img/check2.png' %}">
+                </div>
+                <div class="card_3_comment">
+                    <p class="ui_18_m">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст.</p>
+                </div>
             </div>
         </div>
         <div class="line_2">
             <div class="card_4">
                 <p class="ui_18_m">Проверка на дубликаты</p>
+                <img src="{% static 'main_page/img/card4.png' %}">
             </div>
             <div class="card_5">
-                <div class="subcart_1">
+                <div class="subcart_1 card_line_2">
                     <p class="ui_18_m">Безопасный доступ к поинту</p>
+                    <p class="ui_16_r">Есть ли безопасный доступ для пешеходов?</p>
+                    <div class="card_score">
+                        <p class="ui_18_m">Оценка:</p>
+                        <select name="2_score" id="2_score-select">
+                            <option value="">--Выберите оценку--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="subcart_2">
+                <div class="subcart_2 card_line_2">
                     <p class="ui_18_m">Уникальность поинта</p>
+                    <p class="ui_16_r">Насколько поинт уникален? Поинт не должен быть чем-то распространенным в данной области.</p>
+                    <div class="card_score">
+                        <p class="ui_18_m">Оценка:</p>
+                        <select name="2_score" id="2_score-select">
+                            <option value="">--Выберите оценку--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="subcart_3">
+                <div class="subcart_3 card_line_2">
                     <p class="ui_18_m">Историческое значение поинта</p>
+                    <p class="ui_16_r">Имеет ли поинт историческое либо культурное значение?</p>
+                    <div class="card_score">
+                        <p class="ui_18_m">Оценка:</p>
+                        <select name="2_score" id="2_score-select">
+                            <option value="">--Выберите оценку--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>

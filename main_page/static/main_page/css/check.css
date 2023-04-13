@@ -1,1 +1,15 @@
-.check_point{min-height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;}
+.check_point{min-height:100%;display:flex;flex-direction:column;}
+
+.nav_left{min-height:130vh;}
+
+.card_line_1{width:491px;height:532px;}.card_line_2{width:491px;height:154px;background:#FFFFFF;box-shadow:4px -4px 4px rgba(0, 0, 0, 0.25);border-radius:15px;padding:25px;}
+.table-of-content{margin:24px;}.line_1,.line_2,.line_3{margin-left:64px;margin-right:64px;display:flex;justify-content:space-between;}
+.card_1,.card_2,.card_3,.card_4{background:#FFFFFF;box-shadow:4px -4px 4px rgba(0, 0, 0, 0.25);border-radius:15px;padding:25px;}
+.card_1 p,.card_2 p{width:441px;height:44px;}.card_1_info img,.card_2_info{margin-top:16px;margin-bottom:16px;}
+.card_score{margin-top:16px;display:flex;}.card_score p{width:auto;height:auto;margin-right:8px;}
+.card_score select{border-radius:5px;box-shadow:2px -2px 4px rgba(0, 0, 0, 0.25);}
+.card_2_info,.card_3_comment{width:441px;height:382px;background:#ECECEC;padding:8px;}.card_2_info p{width:425px;}
+.card_3_comment{width:441px;height:137px;}.card_3 p{width:441px;}.card_3_info img{width:441px;height:291px;margin-top:16px;margin-bottom:16px;}
+.line_2{margin-top:24px;}.card_4 img{margin-top:4px;}.card_4{width:1030px;height:491px;}
+.subcart_2{margin-top:24px;margin-bottom:24px;}.subcart_1{height:135px;}
+
