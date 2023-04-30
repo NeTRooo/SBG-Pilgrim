@@ -1,0 +1,54 @@
+{% extends 'main_page/shablon.html' %}
+{% load static %}
+
+{% block title %}Мои заявки | Pilgrim SBG{% endblock  %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'main_page/css/applications.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="applications_point">
+        <div class="table-of-content">
+            <p class="h5">Управление заявками</p>
+            <p class="ui_18_m">Выберите заявку, чтобы просмотреть подробную информацию</p>
+        </div>
+        <div class="applications_content">
+            <div class="all_points">
+                <div class="point_preview point_1"> {% comment %} С бд добавлять id, и сделать это через цикл {% endcomment %}
+                    <img src="{% static 'main_page/img/check1.png' %}">
+                    <div class="points_text">
+                        <p class="ui_18_m">Стелла “Я люблю СКФУ”</p>
+                        <p class="ui_14_m">микрорайон № 22, Промышленный район, Ставрополь</p>
+                        <div class="status">
+                            <p class="ui_14_r">Отклоненно</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="point_preview point_2">
+                    <img src="{% static 'main_page/img/check1.png' %}">
+                    <div class="points_text">
+                        <p class="ui_18_m">Стелла “Я люблю СКФУ”</p>
+                        <p class="ui_14_m">микрорайон № 22, Промышленный район, Ставрополь</p>
+                        <div class="status">
+                            <p class="ui_14_r">Одобрено</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="point_preview point_3">
+                    <img src="{% static 'main_page/img/check1.png' %}">
+                    <div class="points_text">
+                        <p class="ui_18_m">Стелла “Я люблю СКФУ”</p>
+                        <p class="ui_14_m">микрорайон № 22, Промышленный район, Ставрополь</p>
+                        <div class="status">
+                            <p class="ui_14_r">На проверке</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="data_point">
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

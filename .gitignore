@@ -15,3 +15,4 @@ sbgpilgrim_bot/credentials.py
 0tg/db1.sqlite3
 0tg/main.py
 main_page\views.py
+main_page/static/main_page/css/applications.css
